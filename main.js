@@ -8,12 +8,17 @@ let genreList = ["3D шутер", "Файтинг", "Симулятор", "Ст�
 let NumberOfPlayers = document.querySelector(".NumberOfPlayers");
 let NumberOfPlayersList = ["Одиночная", "Одиночная", "Одиночная", "Многопользовательская", "Многопользовательская", "PBEM"];
 
-// Тип
-let TypeGame = document.querySelector(".TypeGame");
-let TypeGameList = ["Линейный сюжет", "Не линейный сюжет", "Бесконечная", "Открытый мир"];
+// Сюжет
+let PlotGame = document.querySelector(".PlotGame");
+let PlotGameList = ["Линейный сюжет", "Не линейный сюжет"];
+
+// Мир
+let WorldGame = document.querySelector(".WorldGame");
+let WorldGameList = ["Бесконечнй", "Открытый мир"];
 
 btn.addEventListener("click", () => {
 	genre.innerHTML = genreList[Math.floor(Math.random() * genreList.length)];
 	NumberOfPlayers.innerHTML = NumberOfPlayersList[Math.floor(Math.random() * NumberOfPlayersList.length)];
-	TypeGame.innerHTML = TypeGameList[Math.floor(Math.random() * TypeGameList.length)];
+	PlotGame.innerHTML = PlotGameList[Math.floor(Math.random() * PlotGameList.length)];
+	WorldGame.innerHTML = WorldGameList[Math.floor(Math.random() * WorldGameList.length)];
 });
